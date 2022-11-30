@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>1st Project | Tailwind</title>
+</head>
+<body>
+    
+    <!-- header -->
+    <header class="py-4 bg-white shadow-sm">
+        <nav class="container flex justify-between items-center">
+            <!-- logo -->
+            <a href="#" class="text-4xl text-primary">
+                LOGO
+            </a>
+            <!-- searchbar -->
+            <div class="w-full max-w-xl flex relative">
+                <span class="text-lg absolute left-4 top-3 text-gray-700">
+                    <i class="fa fa-search"></i>
+                </span>
+                <input type="text" class="w-full pl-12 py-3 border border-primary border-r-0 rounded-l-md focus:outline-none" placeholder="search">
+                <button class="px-8 text-white bg-primary border border-primary rounded-r-md hover:text-primary hover:bg-transparent">Search</button>
+            </div>
+            <!-- icons -->
+            <div class="flex items-center space-x-4">
+                <a href="#" class="text-center text-gray-700 hover:text-primary relative">
+                    <div class="text-2xl">
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <div class="text-xs leading-3">Wish List</div>
+                    <span class="w-5 h-5 rounded-full text-white bg-primary absolute right-0 -top-1">8</span>
+                </a>
+                <a href="#" class="text-center text-gray-700 hover:text-primary relative">
+                    <div class="text-2xl">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <div class="text-xs leading-3">Cart</div>
+                    <span class="w-5 h-5 rounded-full text-white bg-primary absolute -right-3 -top-1">8</span>
+                </a>
+                <a href="#" class="text-center text-gray-700 hover:text-primary relative">
+                    <div class="text-2xl">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="text-xs leading-3">Account</div>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <!-- header end -->
+
+    <!-- navbar -->
+    <nav class="bg-gray-800">
+        <div class="container flex">
+            <!-- all category -->
+            <div class="px-8 py-4 bg-primary flex items-center cursor-pointer relative group">
+                <span class="text-white">
+                    <i class="fa-solid fa-bars"></i>
+                </span>
+                <span class="capitalize text-white ml-2">All category</span>
+                <div class="absolute w-full left-0 top-full bg-white shadow-md py-3 divide-y divide-gray-4 divide-solid opacity-0 invisible group-hover:opacity-100 group-hover:visible transition">
+                    <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-300">
+                        <span class="w-5 h-5 object-contain">
+                            <img src="../img/badroom.png" alt="">
+                        </span>
+                        <span class="text-sm text-gray-600 ml-6">Bedroom</span> 
+                    </a>
+
+                    <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-300">
+                        <span class="w-5 h-5 object-contain">
+                            <img src="../img/sofa.png" alt="">
+                        </span>
+                        <span class="text-sm text-gray-600 ml-6">Sofa</span>
+                    </a>
+                    <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-300">
+                        <span class="w-5 h-5 object-contain">
+                            <img src="../img/office.jpg" alt="">
+                        </span>
+                        <span class="text-sm text-gray-600 ml-6">Office</span>
+                    </a>
+                    <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-300">
+                        <span class="w-5 h-5 object-contain">
+                            <img src="../img/outdoor.png" alt="">
+                        </span>
+                        <span class="text-sm text-gray-600 ml-6">Outdoor</span>
+                    </a>
+                    <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-300">
+                        <span class="w-5 h-5 object-contain">
+                            <i class="fa-solid fa-mattress-pillow"></i>
+                        </span>
+                        <span class="text-sm text-gray-600 ml-6">Mattress</span>
+                    </a>
+                    <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-300">
+                        
+                            <img class="w-5 h-5 object-contain" src="../img/dining.png" alt="">
+                        <span class="text-sm text-gray-600 ml-6">Dining</span>
+                    </a>
+                </div>
+            </div>
+            <!-- navbar links -->
+            <div class="flex items-center justify-between pl-12 flex-grow">
+                <div class="flex items-center space-x-6 capitalize">
+                    <a href="index.html" class="text-gray-200 hover:text-white">Home</a>
+                    <a href="shope.html" class="text-gray-200 hover:text-white">Shop</a>
+                    <a href="#" class="text-gray-200 hover:text-white">About us</a>
+                    <a href="#" class="text-gray-200 hover:text-white">Contact us</a>
+                </div>
+                <a href="#" class="text-gray-200 hover:text-white transition">Login/Register</a>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- breadcrums -->
+    <div class="container flex items-center gap-3 py-4">
+        <a href="index.html" class="text-primary text-base">
+            <i class="fas fa-home"></i>
+        </a>
+        <span class="text-gray-400 text-sm">
+            <i class="fas fa-chevron-right"></i>
+        </span>
+        <p class="text-gray-600 font-medium capitalize">about us</p>
+    </div>
+    <!-- breadcrums end -->
+</body>
